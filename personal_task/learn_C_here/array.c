@@ -11,8 +11,8 @@ int main(void)
 
     //getting user's scores
     do{
-    printf("\nEnter score: ");
-    scanf("%d", &score[i]);
+    printf("\nPlease enter score %i: ", i+1);
+        scanf(" %i", &score[i]);;
     i++;
     }
     while(i<3);
@@ -24,11 +24,10 @@ int main(void)
     
     score[3];
     
-    for (i = 0; i < 3; i++)
+    for( i = 0; i < 3; i++)
     {
-     printf("\nEnter score: ");
-    scanf("%d", &score[i]);
+        printf("\nPlease enter score %i: ", i+1);
+        scanf(" %i", &score[i]);
     }
-    printf("\nYour average is %f", (score[0] + score[1] + score[2]) / (float) 3);
+    printf("\nYour Average is: %f\n", (score[0] + score[1] + score[2]) / (float) 3);
 }
-
