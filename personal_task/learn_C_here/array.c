@@ -31,3 +31,4 @@ int main(void)
     }
     printf("\nYour average is %f", (score[0] + score[1] + score[2]) / (float) 3);
 }
+
