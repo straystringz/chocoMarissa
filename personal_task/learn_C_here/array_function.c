@@ -1,27 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <cs50.h
 
 
 //This code is to test my function prototyping skills
 
+const int N = 3
 
+float average( int array[]);
 
-float average(int array[]);
 int main(void)
 {
     //Firstly lemme check my previous skills
-    
-    int score[3];
-    int i = 0;
-    const int N = 4
-    
-   
-    
-    for( i = 0; i < 3; i++)
+
+    int scores[N];
+
+    for( int i = 0; i < N; i++)
     {
         printf("Please enter score %i: ", i+1);
-        scanf(" %i", &score[i]);
+        scanf(" %i", &scores[i]);
     }
-    printf("\nYour Average is: %f\n", (score[0] + score[1] + score[2]) / (float) 3);
+    printf("\nYour Average is: %f\n", (float) average( scores ));
 }
 
+
+float average(int array[])
+{
+    int sum = 0;
+    for(int i = 0; i < N; i++)
+    {
+        sum += array[i];
+    }
+    return (sum/(float)N);
+}
