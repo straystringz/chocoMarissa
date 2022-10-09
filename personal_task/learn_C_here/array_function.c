@@ -18,9 +18,9 @@ int main(void)
     for( int i = 0; i < N; i++)
     {
         printf("Please enter score %i: ", i+1);
-        scanf(" %i", &scores[i]);
+        scanf(" %i", scores);
     }
-    printf("\nYour Average is: %f\n", (float) average( scores ));
+    printf("\nYour Average is: %f\n",  average( scores ));
 }
 
 

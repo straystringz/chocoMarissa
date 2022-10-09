@@ -14,12 +14,14 @@ int main (void)
     
     
     printf("Type in any string: " );
-    fgets(name, sizeof name, stdin);
+    scanf("%[^\n]s", name); //To make scanf take more than one string, use "%[^\n]s" instead of just %s.
+    
+    //or you can use fgets but, you have to check the user input not to go above required input -1
     
     
     while( name[i] != '\0' )
     {
         i++;
     }
-    printf("You have %i letters in your name\n", i-1);
+    printf("You have %i letters in your name\n", i);
 }
