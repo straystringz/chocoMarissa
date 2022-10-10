@@ -5,7 +5,7 @@
 
 //This code is to test my function prototyping skills
 
-const int N = 3
+const int N = 3;
 
 float average( int array[]);
 
