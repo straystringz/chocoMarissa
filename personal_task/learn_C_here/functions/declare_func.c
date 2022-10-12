@@ -27,3 +27,6 @@ char fun()//note that the function must match wit the prototype format.
 {
     return 'a';
 }
+
+//As good practice, I reccomend that you prototype a function before using it
+//implicit = assumes a different type
