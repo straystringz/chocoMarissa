@@ -28,8 +28,16 @@
  
  
  
- int add(int a, int b)//Function definition(mention datatype of function and names of parameters)
+ int add(int a, int b)//Function definition(mention datatype of functions and names of parameters)
  {
      return(a+b); //The compiler will return the result to line 23
  }
+ /**
+  * Parameters Vs Arguments
+  * Arguments will be seen in parentesis when you call the function while parameters are found in both the function declaration and definition
+  * Parameters = Formal parameters
+  * arguments = Actual parameters
+  * Parameter is a variable in the declaration and definition of the function
+  * Arguments is the actual value of the parameter that gets passeds to the function.
+  */
  
